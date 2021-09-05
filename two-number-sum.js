@@ -11,17 +11,31 @@
 // return the pair, otherwise, calculate the complement and add the key/value pair into the hash table. If I get out of the for loop without returning the pair,
 // return an empty array.
 
+// function twoNumberSum(array, targetSum) {
+//     const hashTable = new Map();
+  
+//     for (const num of array) {
+//       if (hashTable.has(num)) {
+//         return [hashTable.get(num), num];
+//       }
+  
+//       const diff = targetSum - num;
+//       hashTable.set(diff, num);
+//     }
+  
+//     return [];
+//   }
+
+
 function twoNumberSum(array, targetSum) {
-    const hashTable = new Map();
-  
-    for (const num of array) {
-      if (hashTable.has(num)) {
-        return [hashTable.get(num), num];
+  for (let i = 0; i < array.length - 1; i++) {
+    const firstNum = array[i];
+    for (let j = i + 1; j < array.length; j++) {
+      const secondNum = array.length[j];
+      if (firstNum + secondNum === targetSum) {
+        return [firstNum, secondNum];
       }
-  
-      const diff = targetSum - num;
-      hashTable.set(diff, num);
     }
-  
-    return [];
   }
+  return [];
+}
