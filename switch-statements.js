@@ -4,7 +4,7 @@
 // 3 - gamma
 // 4 - delta
 
-
+0
 
 function caseInSwitch(val) {
     var answer = "";
