@@ -1,3 +1,8 @@
+function largestOfFour(arr) {
+
+    // Create a variable to store the results as an array.
+    let results = [];
+  
   // Create an outer loop to iterate through the outer array.
   for (let i = 0; i < arr.length; i++) {
 
